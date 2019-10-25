@@ -28,8 +28,11 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`rna hello`](#rna-hello)
-* [`rna help [COMMAND]`](#rna-help-command)
+- [react-native-assistant](#react-native-assistant)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`rna hello`](#rna-hello)
+  - [`rna help [COMMAND]`](#rna-help-command)
 
 ## `rna hello`
 
