@@ -1,9 +1,48 @@
 {
-	"name": "react-native-assistant",
-	"version": "0.0.1",
-	"description": "react-native-assistant is a CLI tool written in NodeJS to make ReactNative App development easier and faster!",
-	"main": "index.js",
-	"repository": "git@github.com:swalahamani/react-native-assistant.git",
-	"author": "Muhammad Swalah A A <swalahamani@gmail.com>",
-	"license": "MIT"
+  "name": "react-native-assistant",
+  "description": "A CLI tool to make ReactNative app development easier and faster!",
+  "version": "0.0.1",
+  "author": "Muhammad Swalah A A @swalahamani",
+  "bin": {
+    "rna": "./bin/run"
+  },
+  "bugs": "https://github.com/swalahamani/react-native-assistant/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "globby": "^10"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/swalahamani/react-native-assistant",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "rna",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "swalahamani/react-native-assistant",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
 }
